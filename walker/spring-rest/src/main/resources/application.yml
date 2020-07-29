@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: prod
+server:
+  port: 8009
+---
+spring:
+  profiles: dev
+---
+spring:
+  profiles: uat
+---
+spring:
+  profiles: prod
