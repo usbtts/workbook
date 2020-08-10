@@ -106,5 +106,6 @@
 		<module>notebook</module>
 		<module>algorithm</module>
 		<module>spring-batch</module>
+		<module>rpn</module>
 	</modules>
 </project>
