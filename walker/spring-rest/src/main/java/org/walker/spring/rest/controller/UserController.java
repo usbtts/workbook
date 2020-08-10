@@ -11,7 +11,7 @@ import org.walker.spring.rest.base.AbstractController;
 import org.walker.spring.rest.base.Result;
 import org.walker.spring.rest.pojo.UserInfo;
 
-@RestController("/user")
+@RestController
 public class UserController extends AbstractController{
 	
 	@RequestMapping(path="/users", method=RequestMethod.GET)
