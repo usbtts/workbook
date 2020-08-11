@@ -11,8 +11,8 @@ public class SubtractOperator extends AbstractOperator {
 	@Override
 	public void compute() {
 		String subtrahend = ps.pop();
-		String augend = ps.pop();
-		ps.push(new BigDecimal(augend).subtract(new BigDecimal(subtrahend)).toString());
+		String minuend = ps.pop();
+		ps.push(new BigDecimal(minuend).subtract(new BigDecimal(subtrahend)).toString());
 	}
 
 }

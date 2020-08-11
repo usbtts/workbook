@@ -1,5 +1,7 @@
 package org.walker.calculator.operator;
 
+import java.math.BigDecimal;
+
 public class SqrtOperator extends AbstractOperator {
 
 	public SqrtOperator(String sign) {
@@ -8,7 +10,7 @@ public class SqrtOperator extends AbstractOperator {
 	
 	@Override
 	public void compute() {
-		// TODO Auto-generated method stub
+		ps.push(new BigDecimal(Math.sqrt(Double.valueOf(ps.pop()))).toString());
 	}
 
 }

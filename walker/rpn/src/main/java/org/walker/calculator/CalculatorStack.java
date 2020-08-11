@@ -3,19 +3,20 @@ package org.walker.calculator;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class ParametersStack {
+public class CalculatorStack {
+	
 	private static Stack<String> parameters = new Stack<String>();
 	
-	private static volatile ParametersStack instance;
+	private static volatile CalculatorStack instance;
 	
-	private ParametersStack() {
+	private CalculatorStack() {
 		
 	}
 	
-	public static ParametersStack getInstance() {
+	public static CalculatorStack getInstance() {
 		if (instance == null) {
-			synchronized (ParametersStack.class) {
-				instance = new ParametersStack();
+			synchronized (CalculatorStack.class) {
+				instance = new CalculatorStack();
 			}
 		}
 		return instance;
@@ -27,6 +28,10 @@ public class ParametersStack {
 	
 	public void push(String item) {
 		parameters.push(item);
+	}
+	
+	public void clear() {
+		parameters.clear();
 	}
 	
 	public static String display() {

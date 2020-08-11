@@ -1,20 +1,19 @@
 package org.walker.calculator.operator;
 
-import org.walker.calculator.ParametersStack;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.walker.calculator.CalculatorStack;
 
 public class AbstractOperator implements Operator {
 
+	public Logger logger = LoggerFactory.getLogger(this.getClass());
+	
 	public String sign;
 	
-	public ParametersStack ps = ParametersStack.getInstance();
+	public CalculatorStack ps = CalculatorStack.getInstance();
 	
 	@Override
 	public void compute() {
-	}
-
-	@Override
-	public void compute(String item) {
-		ps.push(item);
 	}
 
 }

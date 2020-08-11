@@ -1,14 +1,14 @@
 package org.walker.rpn;
 
 import org.junit.jupiter.api.Test;
-import org.walker.calculator.Calculator;
+import org.walker.calculator.RpnCalculator;
 
-public class CalculatorTest {
+public class RpnCalculatorTest {
 
-	private Calculator calculator = new Calculator();
+	private RpnCalculator rpnCalculator = new RpnCalculator();
 	
 	@Test
-	public void testRpnCalculator() {
-		calculator.calculate("5 2 +");
+	public void testAdd() {
+		rpnCalculator.calculate("1 2 3 * 5 + * * 6 5");
 	}
 }
