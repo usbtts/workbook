@@ -2,45 +2,31 @@ package org.walker.rpn.operator;
 
 import java.math.BigDecimal;
 
-public class AddOperator implements Operator {
+import org.walker.rpn.exception.IllegalOperandException;
 
-	private String sign;
-	private BigDecimal addend;
-	private BigDecimal augend;
-	
-	public AddOperator(String sign, BigDecimal addend, BigDecimal augend) {
+public class AddOperator extends AbstractOperator {
+
+	public AddOperator(String sign) {
 		this.sign = sign;
-		this.addend = addend;
-		this.augend = augend;
 	}
 	
 	@Override
-	public BigDecimal compute() {
-		return addend.add(augend);
-	}
-
-	public String getSign() {
-		return sign;
-	}
-
-	public void setSign(String sign) {
-		this.sign = sign;
-	}
-
-	public BigDecimal getAddend() {
-		return addend;
-	}
-
-	public void setAddend(BigDecimal addend) {
-		this.addend = addend;
-	}
-
-	public BigDecimal getAugend() {
-		return augend;
-	}
-
-	public void setAugend(BigDecimal augend) {
-		this.augend = augend;
+	public void compute() {
+		String augend = ps.pop();
+		if (augend == null) {
+			throw new IllegalOperandException("augend is null");
+		}
+		
+		String addend = ps.pop();
+		if (addend == null) {
+			throw new IllegalOperandException("addend is null");
+		}
+		
+		try {
+			ps.push(new BigDecimal(addend).add(new BigDecimal(augend)).toString());
+		} catch (NumberFormatException e) {
+			throw new IllegalOperandException("illegal operand " + addend + ", " + augend);
+		}
 	}
 
 }
