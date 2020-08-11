@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class CalculatorStack {
 	
-	private static Stack<String> parameters = new Stack<String>();
+	private static Stack<String> operands = new Stack<String>();
 	
 	private static volatile CalculatorStack instance;
 	
@@ -23,18 +23,18 @@ public class CalculatorStack {
 	}
 	
 	public String pop() {
-		return parameters.pop();
+		return operands.pop();
 	}
 	
 	public void push(String item) {
-		parameters.push(item);
+		operands.push(item);
 	}
 	
 	public void clear() {
-		parameters.clear();
+		operands.clear();
 	}
 	
 	public static String display() {
-		return Arrays.toString(parameters.toArray());
+		return Arrays.toString(operands.toArray());
 	}
 }
