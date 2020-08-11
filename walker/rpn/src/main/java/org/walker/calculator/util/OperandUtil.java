@@ -1,4 +1,4 @@
-package org.walker.rpn.util;
+package org.walker.calculator.util;
 
 import java.math.BigDecimal;
 

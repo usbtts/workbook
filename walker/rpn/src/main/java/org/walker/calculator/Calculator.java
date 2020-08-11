@@ -1,8 +1,8 @@
-package org.walker.rpn;
+package org.walker.calculator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.walker.rpn.operator.factory.OperatorFactory;
+import org.walker.calculator.operator.factory.OperatorFactory;
 
 public class Calculator {
 
@@ -15,6 +15,6 @@ public class Calculator {
 			operatorFactory.createOperator(input).compute();
 		}
 		
-		logger.info("Stack: " + ParametersStack.getInstance().toString());
+		logger.info("Stack: {}", ParametersStack.display());
 	}
 }

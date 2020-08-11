@@ -1,4 +1,4 @@
-package org.walker.rpn.exception;
+package org.walker.calculator.exception;
 
 public class IllegalOperandException extends RuntimeException {
 

@@ -1,9 +1,10 @@
-package org.walker.rpn;
+package org.walker.calculator;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class ParametersStack {
-	private Stack<String> parameters = new Stack<String>();
+	private static Stack<String> parameters = new Stack<String>();
 	
 	private static volatile ParametersStack instance;
 	
@@ -28,7 +29,7 @@ public class ParametersStack {
 		parameters.push(item);
 	}
 	
-	public String display() {
-		return parameters.toString();
+	public static String display() {
+		return Arrays.toString(parameters.toArray());
 	}
 }

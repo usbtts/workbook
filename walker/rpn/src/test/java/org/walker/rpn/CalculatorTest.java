@@ -1,6 +1,7 @@
 package org.walker.rpn;
 
 import org.junit.jupiter.api.Test;
+import org.walker.calculator.Calculator;
 
 public class CalculatorTest {
 

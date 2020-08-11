@@ -1,4 +1,4 @@
-package org.walker.rpn.operator;
+package org.walker.calculator.operator;
 
 public class SqrtOperator extends AbstractOperator {
 

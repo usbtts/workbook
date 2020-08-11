@@ -1,6 +1,6 @@
-package org.walker.rpn.operator;
+package org.walker.calculator.operator;
 
-import org.walker.rpn.exception.UndefinedOperatorException;
+import org.walker.calculator.exception.UndefinedOperatorException;
 
 public class UndefinedOperator extends AbstractOperator {
 

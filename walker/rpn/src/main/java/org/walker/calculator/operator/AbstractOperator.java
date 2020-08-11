@@ -1,6 +1,6 @@
-package org.walker.rpn.operator;
+package org.walker.calculator.operator;
 
-import org.walker.rpn.ParametersStack;
+import org.walker.calculator.ParametersStack;
 
 public class AbstractOperator implements Operator {
 
