@@ -1,5 +1,5 @@
 package org.walker.calculator.input;
 
-public interface Input {
-	public String read();
+public interface Input<T> {
+	public T read();
 }
