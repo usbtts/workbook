@@ -1,6 +1,5 @@
 package org.walker.rpn.stack;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Stack;
 
@@ -44,7 +43,6 @@ public class OperandsStack {
 		if (operandsList.size() > 1) {
 			operandsList.removeFirst();
 			operands = operandsList.peek();
-			System.out.println("undo: " + Arrays.asList(operands.toArray()));
 		}
 	}
 
@@ -57,12 +55,7 @@ public class OperandsStack {
 	}
 
 	public void stash() {
-		Stack<String> first = operandsList.peek();
-		if (operands == null) {
-			operands = new Stack<String>();
-		}
 		operandsList.addFirst(SerializationUtils.clone(operands));
 		setOperands(operandsList.peek());
-		System.out.println("stash list: " + operandsList);
 	}
 }
