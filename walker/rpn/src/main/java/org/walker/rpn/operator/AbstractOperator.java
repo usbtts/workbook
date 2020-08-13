@@ -2,6 +2,7 @@ package org.walker.rpn.operator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.walker.rpn.exception.IllegalOperatorException;
 import org.walker.rpn.stack.OperandsStack;
 
 public abstract class AbstractOperator implements Operator {
@@ -25,7 +26,7 @@ public abstract class AbstractOperator implements Operator {
 			operate();
 		} catch (Exception e) {
 			operandsStack.undo();
-			throw e;
+			throw new IllegalOperatorException(e.getMessage(), this.sign, this.pos);
 		}
 	}
 
