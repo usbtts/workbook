@@ -18,13 +18,14 @@ public class InputListener extends AbstractEventListener {
 	
 	@Override
 	public void onEvent(Event event) {
-		String input = "";
+		String expressions = "";
 		boolean exceptionThrown = false;
 		int pos = 0;
 		try {
-			input = event.getInput().read();
-			calculator.compute(input);
+			expressions = event.getInput().read();
+			calculator.compute(expressions);
 		} catch (IllegalOperatorException ioe) {
+			logger.error("Operate exception", ioe);
 			output.write("operator " + ioe.getSign() + " (position: " + ioe.getPos() + "): insufficient parameters");
 			exceptionThrown = true;
 			pos = ioe.getPos() + 1;
@@ -35,9 +36,9 @@ public class InputListener extends AbstractEventListener {
 		
 		if (exceptionThrown) {
 			StringJoiner joiner = new StringJoiner(" and ");
-			String[] inputsArr = input.split(" ");
-			for (int i = pos; i < inputsArr.length; i++) {
-				joiner.add(inputsArr[i]);
+			String[] exprs = expressions.split(" ");
+			for (int i = pos; i < exprs.length; i++) {
+				joiner.add(exprs[i]);
 			}
 			
 			output.write("(" + joiner.toString() + " were not pushed on to the stack due to the previous error)");

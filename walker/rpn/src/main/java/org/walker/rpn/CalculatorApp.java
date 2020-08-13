@@ -27,7 +27,7 @@ public class CalculatorApp {
 	}
 
 	private void run(String[] args) {
-		logger.info(this.getClass().getName() + " is started...");
+		logger.debug(this.getClass().getName() + " is started...");
 		service.execute(new CmdLineInput(new InputListener(calculator, output)));
 	}
 }

@@ -23,6 +23,7 @@ public abstract class AbstractOperator implements Operator {
 			if (!"undo".equals(sign)) {
 				operandsStack.stash();
 			}
+			logger.debug("This is a [" + sign + "] operator");
 			operate();
 		} catch (Exception e) {
 			operandsStack.undo();

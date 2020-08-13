@@ -21,6 +21,7 @@ public class CmdLineInput extends AbstractInput {
 	@Override
 	public void run() {
 		while (scanner.hasNextLine()) {
+			logger.debug("There is an input");
 			listener.onEvent(new Event(this));
 		}
 	}
