@@ -9,7 +9,7 @@ public class RpnCalculator implements Calculator {
 	@Override
 	public void compute(String inputs) {
 		for (String input : inputs.split(" ")) {
-			operatorFactory.createOperator(input).operate();
+			operatorFactory.createOperator(input).doOperate();
 		}
 	}
 }

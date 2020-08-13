@@ -15,4 +15,11 @@ public abstract class AbstractOperator implements Operator {
 	@Override
 	public abstract void operate();
 
+	public void doOperate() {
+		if (!"undo".equals(sign)) {
+			operandsStack.stash();
+		}
+		operate();
+	}
+
 }

@@ -8,7 +8,7 @@ public class UndoOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		operandsStack.pop();
+		operandsStack.undo();
 	}
 
 }
