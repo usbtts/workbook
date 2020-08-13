@@ -10,9 +10,9 @@ public class MultiplyOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		String multiplier = ps.pop();
-		String multiplicand = ps.pop();
-		ps.push(new BigDecimal(multiplicand).multiply(new BigDecimal(multiplier)).toString());
+		String multiplier = operandsStack.pop();
+		String multiplicand = operandsStack.pop();
+		operandsStack.push(new BigDecimal(multiplicand).multiply(new BigDecimal(multiplier)).toString());
 	}
 
 }

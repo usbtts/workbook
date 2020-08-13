@@ -10,7 +10,7 @@ public class UndefinedOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		throw new UndefinedOperatorException();
+		throw new UndefinedOperatorException("Sign [" + this.sign + "] is undefined");
 	}
 
 }

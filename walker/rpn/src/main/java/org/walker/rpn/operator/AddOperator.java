@@ -10,9 +10,9 @@ public class AddOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		String addend = ps.pop();
-		String augend = ps.pop();
-		ps.push(new BigDecimal(augend).add(new BigDecimal(addend)).toString());
+		String addend = operandsStack.pop();
+		String augend = operandsStack.pop();
+		operandsStack.push(new BigDecimal(augend).add(new BigDecimal(addend)).toString());
 	}
 
 }

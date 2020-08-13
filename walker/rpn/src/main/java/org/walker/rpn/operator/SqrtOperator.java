@@ -10,7 +10,7 @@ public class SqrtOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		ps.push(new BigDecimal(Math.sqrt(Double.valueOf(ps.pop()))).toString());
+		operandsStack.push(new BigDecimal(Math.sqrt(Double.valueOf(operandsStack.pop()))).toString());
 	}
 
 }

@@ -9,6 +9,5 @@ public class RpnCalculatorTest {
 	
 	@Test
 	public void testAdd() {
-		rpnCalculator.calculate("1 2 3 * 5 + * * 6 5");
 	}
 }

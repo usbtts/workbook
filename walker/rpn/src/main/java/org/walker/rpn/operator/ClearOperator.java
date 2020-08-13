@@ -8,7 +8,7 @@ public class ClearOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		ps.clear();
+		operandsStack.clear();
 	}
 
 }

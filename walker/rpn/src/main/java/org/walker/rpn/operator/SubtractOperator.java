@@ -10,9 +10,9 @@ public class SubtractOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		String subtrahend = ps.pop();
-		String minuend = ps.pop();
-		ps.push(new BigDecimal(minuend).subtract(new BigDecimal(subtrahend)).toString());
+		String subtrahend = operandsStack.pop();
+		String minuend = operandsStack.pop();
+		operandsStack.push(new BigDecimal(minuend).subtract(new BigDecimal(subtrahend)).toString());
 	}
 
 }

@@ -11,7 +11,7 @@ public class DefaultOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		ps.push(input);
+		operandsStack.push(input);
 	}
 
 }

@@ -10,9 +10,9 @@ public class DivideOperator extends AbstractOperator {
 	
 	@Override
 	public void operate() {
-		String divisor = ps.pop();
-		String dividend = ps.pop();
-		ps.push(new BigDecimal(dividend).divide(new BigDecimal(divisor)).toString());
+		String divisor = operandsStack.pop();
+		String dividend = operandsStack.pop();
+		operandsStack.push(new BigDecimal(dividend).divide(new BigDecimal(divisor)).toString());
 	}
 
 }
