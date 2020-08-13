@@ -4,8 +4,9 @@ import java.math.BigDecimal;
 
 public class SqrtOperator extends AbstractOperator {
 
-	public SqrtOperator(String sign) {
+	public SqrtOperator(String sign, int pos) {
 		this.sign = sign;
+		this.pos = pos;
 	}
 	
 	@Override

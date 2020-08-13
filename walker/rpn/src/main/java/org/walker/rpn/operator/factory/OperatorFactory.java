@@ -14,27 +14,27 @@ import org.walker.rpn.util.OperandUtil;
 
 public class OperatorFactory {
 
-	public AbstractOperator createOperator(String input) {
+	public AbstractOperator createOperator(String input, int pos) {
 		switch (input) {
 		case "+":
-			return new AddOperator(input);
+			return new AddOperator(input, pos);
 		case "-":
-			return new SubtractOperator(input);
+			return new SubtractOperator(input, pos);
 		case "*":
-			return new MultiplyOperator(input);
+			return new MultiplyOperator(input, pos);
 		case "/":
-			return new DivideOperator(input);
+			return new DivideOperator(input, pos);
 		case "sqrt":
-			return new SqrtOperator(input);
+			return new SqrtOperator(input, pos);
 		case "undo":
-			return new UndoOperator(input);
+			return new UndoOperator(input, pos);
 		case "clear":
-			return new ClearOperator(input);
+			return new ClearOperator(input, pos);
 		default:
 			if (OperandUtil.isNumber(input)) {
-				return new DefaultOperator("defalut", input);
+				return new DefaultOperator("defalut", input, pos);
 			}
-			return new UndefinedOperator(input);
+			return new UndefinedOperator(input, pos);
 		}
 	}
 }

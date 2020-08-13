@@ -12,9 +12,11 @@ public class ConsoleOutput extends AbstractOutput {
 	
 	private String pattern  = "#.##########";
 
+	private String prefix = "stack: ";
+	
 	@Override
 	public void write() {
-		out.print("stack:");
+		out.print(prefix);
 		for (String operand : operandsStack.getOperands()) {
 			DecimalFormat format = new DecimalFormat(pattern);
 			operand = format.format(new BigDecimal(operand).setScale(scale, BigDecimal.ROUND_DOWN).doubleValue());

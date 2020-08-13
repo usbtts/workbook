@@ -4,8 +4,9 @@ import java.math.BigDecimal;
 
 public class MultiplyOperator extends AbstractOperator {
 
-	public MultiplyOperator(String sign) {
+	public MultiplyOperator(String sign, int pos) {
 		this.sign = sign;
+		this.pos = pos;
 	}
 	
 	@Override

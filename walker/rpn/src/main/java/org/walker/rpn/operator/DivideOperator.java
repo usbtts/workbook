@@ -4,8 +4,9 @@ import java.math.BigDecimal;
 
 public class DivideOperator extends AbstractOperator {
 
-	public DivideOperator(String sign) {
+	public DivideOperator(String sign, int pos) {
 		this.sign = sign;
+		this.pos = pos;
 	}
 	
 	@Override

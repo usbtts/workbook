@@ -8,4 +8,6 @@ public abstract class AbstractOutput implements Output {
 	
 	@Override
 	public abstract void write();
+	
+	public abstract void write(String x);
 }

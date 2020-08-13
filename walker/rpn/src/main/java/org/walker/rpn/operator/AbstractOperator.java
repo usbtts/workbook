@@ -10,16 +10,23 @@ public abstract class AbstractOperator implements Operator {
 	
 	public String sign;
 	
+	public int pos;
+	
 	public OperandsStack operandsStack = OperandsStack.getInstance();
 	
 	@Override
 	public abstract void operate();
 
 	public void doOperate() {
-		if (!"undo".equals(sign)) {
-			operandsStack.stash();
+		try {
+			if (!"undo".equals(sign)) {
+				operandsStack.stash();
+			}
+			operate();
+		} catch (Exception e) {
+			operandsStack.undo();
+			throw e;
 		}
-		operate();
 	}
 
 }
