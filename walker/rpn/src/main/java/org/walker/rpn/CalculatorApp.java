@@ -27,7 +27,14 @@ public class CalculatorApp {
 	}
 
 	private void run(String[] args) {
-		logger.debug(this.getClass().getName() + " is started...");
+		logger.debug(this.getClass().getName() + " start...");
 		service.execute(new CmdLineInput(new InputListener(calculator, output)));
+		Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+			@Override
+			public void run() {
+				service.shutdown();
+				logger.debug(this.getClass().getName() + " shutdown...");
+			}
+		}));
 	}
 }

@@ -30,7 +30,7 @@ public class InputListener extends AbstractEventListener {
 			exceptionThrown = true;
 			pos = ioe.getPos() + 1;
 		} catch (Exception e) {
-			
+			logger.error("exception", e);
 		}
 		output.write();
 		
