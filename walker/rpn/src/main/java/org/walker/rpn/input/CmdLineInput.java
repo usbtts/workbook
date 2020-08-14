@@ -2,14 +2,14 @@ package org.walker.rpn.input;
 
 import java.util.Scanner;
 
+import org.walker.rpn.event.AbstractEventListener;
 import org.walker.rpn.event.Event;
-import org.walker.rpn.event.EventListener;
 
 public class CmdLineInput extends AbstractInput {
 
 	private Scanner scanner = new Scanner(System.in);
 	
-	public CmdLineInput(EventListener listener) {
+	public CmdLineInput(AbstractEventListener listener) {
 		this.listener = listener;
 	}
 	
@@ -23,6 +23,7 @@ public class CmdLineInput extends AbstractInput {
 		while (scanner.hasNextLine()) {
 			logger.debug("There is an input");
 			listener.onEvent(new Event(this));
+			listener.onComplete();
 		}
 	}
 

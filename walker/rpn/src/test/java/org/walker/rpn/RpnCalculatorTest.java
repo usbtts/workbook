@@ -1,36 +1,36 @@
 package org.walker.rpn;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import static org.junit.Assert.assertEquals;
+
+import java.util.Stack;
 
 import org.junit.jupiter.api.Test;
 import org.walker.rpn.calculator.AbstractCalculator;
 import org.walker.rpn.calculator.RpnCalculator;
-import org.walker.rpn.event.InputListener;
-import org.walker.rpn.input.CmdLineInput;
-import org.walker.rpn.output.AbstractOutput;
-import org.walker.rpn.output.ConsoleOutput;
+import org.walker.rpn.stack.OperandsStack;
 
 public class RpnCalculatorTest {
 	
-	private ExecutorService service = Executors.newSingleThreadExecutor();
-	
-	private AbstractCalculator calculator = new RpnCalculator();
-	
+	private AbstractCalculator cal = new RpnCalculator();
 	
 	@Test
-	public void test() throws FileNotFoundException {
-		System.setIn(new FileInputStream(this.getClass().getClassLoader().getResource("testCase.txt").getFile()));
-		System.setOut(new PrintStream(this.getClass().getClassLoader().getResource("testResult.txt").getFile()));
-		AbstractOutput output = new ConsoleOutput();
-		service.execute(new CmdLineInput(new InputListener(calculator, output)));
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	public void testExample1() {
+		Stack<String> expectedOperands = new Stack<String>();
+		cal.compute("5 2");
+		expectedOperands.add("5");
+		expectedOperands.add("2");
+		assertEquals(expectedOperands, OperandsStack.getInstance().getOperands());
+	}
+	
+	@Test
+	public void testExample2() {
+		Stack<String> operands = new Stack<String>();
+		cal.compute("2 sqrt");
+		operands.add("1.4142135623730951454746218587388284504413604736328125");
+		assertEquals(operands, OperandsStack.getInstance().getOperands());
+		cal.compute("clear 9 sqrt");
+		operands.clear();
+		operands.add("3");
+		assertEquals(operands, OperandsStack.getInstance().getOperands());
 	}
 }

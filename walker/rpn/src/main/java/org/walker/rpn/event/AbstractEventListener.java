@@ -12,5 +12,9 @@ public abstract class AbstractEventListener implements EventListener {
 	
 	@Override
 	public abstract void onEvent(Event e);
+	
+	public void onComplete() {
+		
+	}
 
 }
