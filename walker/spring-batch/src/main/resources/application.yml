@@ -1,6 +1,9 @@
 spring:
   profiles:
     active: dev
+  batch:
+    job:
+      enabled: false
 server:
   port: 8009
   servlet:
