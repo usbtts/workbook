@@ -17835,3 +17835,150 @@ Unconditional classes:
 2020-07-29 16:46:26 -Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-29 16:46:26 -Initializing Servlet 'dispatcherServlet'
 2020-07-29 16:46:26 -Completed initialization in 4 ms
+2020-07-29 17:55:29 -Starting SpringRestApplication on XYPC with PID 8032 (C:\Users\Administrator\git\repository\walker\spring-rest\target\classes started by Administrator in C:\Users\Administrator\git\repository\walker\spring-rest)
+2020-07-29 17:55:29 -The following profiles are active: prod
+2020-07-29 17:55:30 -Tomcat initialized with port(s): 8009 (http)
+2020-07-29 17:55:30 -Initializing ProtocolHandler ["http-nio-8009"]
+2020-07-29 17:55:30 -Starting service [Tomcat]
+2020-07-29 17:55:30 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-29 17:55:30 -Initializing Spring embedded WebApplicationContext
+2020-07-29 17:55:30 -Root WebApplicationContext: initialization completed in 859 ms
+2020-07-29 17:55:31 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-29 17:55:31 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 17:55:31 -Starting ProtocolHandler ["http-nio-8009"]
+2020-07-29 17:55:31 -Tomcat started on port(s): 8009 (http) with context path ''
+2020-07-29 17:55:31 -Context refreshed
+2020-07-29 17:55:31 -Found 1 custom documentation plugin(s)
+2020-07-29 17:55:31 -Scanning for api listing references
+2020-07-29 17:55:31 -Started SpringRestApplication in 1.943 seconds (JVM running for 2.874)
+2020-07-29 17:55:34 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-29 17:55:34 -Initializing Servlet 'dispatcherServlet'
+2020-07-29 17:55:34 -Completed initialization in 6 ms
+2020-07-29 17:56:23 -Application shutdown requested.
+2020-07-29 17:56:23 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-29 17:56:26 -Starting SpringRestApplication on XYPC with PID 9192 (C:\Users\Administrator\git\repository\walker\spring-rest\target\classes started by Administrator in C:\Users\Administrator\git\repository\walker\spring-rest)
+2020-07-29 17:56:26 -The following profiles are active: prod
+2020-07-29 17:56:27 -Tomcat initialized with port(s): 8009 (http)
+2020-07-29 17:56:27 -Initializing ProtocolHandler ["http-nio-8009"]
+2020-07-29 17:56:27 -Starting service [Tomcat]
+2020-07-29 17:56:27 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-29 17:56:27 -Initializing Spring embedded WebApplicationContext
+2020-07-29 17:56:27 -Root WebApplicationContext: initialization completed in 943 ms
+2020-07-29 17:56:28 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-29 17:56:28 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 17:56:28 -Starting ProtocolHandler ["http-nio-8009"]
+2020-07-29 17:56:28 -Tomcat started on port(s): 8009 (http) with context path ''
+2020-07-29 17:56:28 -Context refreshed
+2020-07-29 17:56:28 -Found 1 custom documentation plugin(s)
+2020-07-29 17:56:28 -Scanning for api listing references
+2020-07-29 17:56:28 -Started SpringRestApplication in 1.961 seconds (JVM running for 2.382)
+2020-07-29 17:56:30 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-29 17:56:30 -Initializing Servlet 'dispatcherServlet'
+2020-07-29 17:56:30 -Completed initialization in 4 ms
+2020-07-29 18:01:21 -Application shutdown requested.
+2020-07-29 18:01:21 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:01:24 -Starting SpringRestApplication on XYPC with PID 8392 (C:\Users\Administrator\git\repository\walker\spring-rest\target\classes started by Administrator in C:\Users\Administrator\git\repository\walker\spring-rest)
+2020-07-29 18:01:25 -The following profiles are active: prod
+2020-07-29 18:01:25 -Tomcat initialized with port(s): 8009 (http)
+2020-07-29 18:01:25 -Initializing ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:01:25 -Starting service [Tomcat]
+2020-07-29 18:01:25 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-29 18:01:26 -Initializing Spring embedded WebApplicationContext
+2020-07-29 18:01:26 -Root WebApplicationContext: initialization completed in 1008 ms
+2020-07-29 18:01:26 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-29 18:01:26 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:01:26 -Starting ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:01:26 -Tomcat started on port(s): 8009 (http) with context path '/api'
+2020-07-29 18:01:26 -Context refreshed
+2020-07-29 18:01:26 -Found 1 custom documentation plugin(s)
+2020-07-29 18:01:26 -Scanning for api listing references
+2020-07-29 18:01:26 -Started SpringRestApplication in 2.068 seconds (JVM running for 2.546)
+2020-07-29 18:01:37 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-29 18:01:37 -Initializing Servlet 'dispatcherServlet'
+2020-07-29 18:01:37 -Completed initialization in 7 ms
+2020-07-29 18:05:16 -Application shutdown requested.
+2020-07-29 18:05:16 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:05:20 -Starting SpringRestApplication on XYPC with PID 7740 (C:\Users\Administrator\git\repository\walker\spring-rest\target\classes started by Administrator in C:\Users\Administrator\git\repository\walker\spring-rest)
+2020-07-29 18:05:20 -The following profiles are active: prod
+2020-07-29 18:05:21 -Tomcat initialized with port(s): 8009 (http)
+2020-07-29 18:05:21 -Initializing ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:05:21 -Starting service [Tomcat]
+2020-07-29 18:05:21 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-29 18:05:21 -Initializing Spring embedded WebApplicationContext
+2020-07-29 18:05:21 -Root WebApplicationContext: initialization completed in 978 ms
+2020-07-29 18:05:21 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-29 18:05:21 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:05:22 -Starting ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:05:22 -Tomcat started on port(s): 8009 (http) with context path '/api'
+2020-07-29 18:05:22 -Context refreshed
+2020-07-29 18:05:22 -Found 1 custom documentation plugin(s)
+2020-07-29 18:05:22 -Scanning for api listing references
+2020-07-29 18:05:22 -Started SpringRestApplication in 2.102 seconds (JVM running for 2.624)
+2020-07-29 18:05:26 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-29 18:05:26 -Initializing Servlet 'dispatcherServlet'
+2020-07-29 18:05:26 -Completed initialization in 6 ms
+2020-07-29 18:05:51 -Application shutdown requested.
+2020-07-29 18:05:51 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:05:55 -Starting SpringRestApplication on XYPC with PID 5512 (C:\Users\Administrator\git\repository\walker\spring-rest\target\classes started by Administrator in C:\Users\Administrator\git\repository\walker\spring-rest)
+2020-07-29 18:05:55 -The following profiles are active: prod
+2020-07-29 18:05:56 -Tomcat initialized with port(s): 8009 (http)
+2020-07-29 18:05:56 -Initializing ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:05:56 -Starting service [Tomcat]
+2020-07-29 18:05:56 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-29 18:05:56 -Initializing Spring embedded WebApplicationContext
+2020-07-29 18:05:56 -Root WebApplicationContext: initialization completed in 914 ms
+2020-07-29 18:05:56 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-29 18:05:56 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:05:56 -Starting ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:05:56 -Tomcat started on port(s): 8009 (http) with context path ''
+2020-07-29 18:05:56 -Context refreshed
+2020-07-29 18:05:56 -Found 1 custom documentation plugin(s)
+2020-07-29 18:05:56 -Scanning for api listing references
+2020-07-29 18:05:56 -Started SpringRestApplication in 1.921 seconds (JVM running for 2.383)
+2020-07-29 18:05:59 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-29 18:05:59 -Initializing Servlet 'dispatcherServlet'
+2020-07-29 18:05:59 -Completed initialization in 4 ms
+2020-07-29 18:06:30 -Application shutdown requested.
+2020-07-29 18:06:30 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:06:34 -Starting SpringRestApplication on XYPC with PID 7256 (C:\Users\Administrator\git\repository\walker\spring-rest\target\classes started by Administrator in C:\Users\Administrator\git\repository\walker\spring-rest)
+2020-07-29 18:06:34 -The following profiles are active: prod
+2020-07-29 18:06:35 -Tomcat initialized with port(s): 8009 (http)
+2020-07-29 18:06:35 -Initializing ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:06:35 -Starting service [Tomcat]
+2020-07-29 18:06:35 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-29 18:06:35 -Initializing Spring embedded WebApplicationContext
+2020-07-29 18:06:35 -Root WebApplicationContext: initialization completed in 937 ms
+2020-07-29 18:06:35 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-29 18:06:35 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:06:36 -Starting ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:06:36 -Tomcat started on port(s): 8009 (http) with context path ''
+2020-07-29 18:06:36 -Context refreshed
+2020-07-29 18:06:36 -Found 1 custom documentation plugin(s)
+2020-07-29 18:06:36 -Scanning for api listing references
+2020-07-29 18:06:36 -Started SpringRestApplication in 2.116 seconds (JVM running for 2.628)
+2020-07-29 18:06:38 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-29 18:06:38 -Initializing Servlet 'dispatcherServlet'
+2020-07-29 18:06:38 -Completed initialization in 5 ms
+2020-07-29 18:07:32 -Application shutdown requested.
+2020-07-29 18:07:32 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:07:36 -Starting SpringRestApplication on XYPC with PID 8916 (C:\Users\Administrator\git\repository\walker\spring-rest\target\classes started by Administrator in C:\Users\Administrator\git\repository\walker\spring-rest)
+2020-07-29 18:07:36 -The following profiles are active: prod
+2020-07-29 18:07:36 -Tomcat initialized with port(s): 8009 (http)
+2020-07-29 18:07:36 -Initializing ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:07:36 -Starting service [Tomcat]
+2020-07-29 18:07:36 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-29 18:07:36 -Initializing Spring embedded WebApplicationContext
+2020-07-29 18:07:36 -Root WebApplicationContext: initialization completed in 875 ms
+2020-07-29 18:07:37 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-29 18:07:37 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 18:07:37 -Starting ProtocolHandler ["http-nio-8009"]
+2020-07-29 18:07:37 -Tomcat started on port(s): 8009 (http) with context path '/api'
+2020-07-29 18:07:37 -Context refreshed
+2020-07-29 18:07:37 -Found 1 custom documentation plugin(s)
+2020-07-29 18:07:37 -Scanning for api listing references
+2020-07-29 18:07:37 -Started SpringRestApplication in 1.971 seconds (JVM running for 2.471)
+2020-07-29 18:07:39 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-29 18:07:39 -Initializing Servlet 'dispatcherServlet'
+2020-07-29 18:07:39 -Completed initialization in 4 ms
+2020-07-29 18:07:58 -getUserById 1
+2020-07-29 18:08:02 -getUserById 2

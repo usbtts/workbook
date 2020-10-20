@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="mysql" targetRuntime="MyBatis3">
+    <jdbcConnection connectionURL="jdbc:mysql://192.168.3.5:3306/rbac?useUnicode=true&amp;characeterEncoding=utf-8&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=TRUE" driverClass="com.mysql.cj.jdbc.Driver" password="58662200" userId="root" >
+    	<property name="nullCatalogMeansCurrent" value="true" />
+    </jdbcConnection>
+    <javaModelGenerator targetPackage="org.walker.spring.web.model" targetProject="src/main/java" />
+    <sqlMapGenerator targetPackage="org.walker.spring.web.mapper" targetProject="src/main/java" />
+    <javaClientGenerator targetPackage="org.walker.spring.web.dao" targetProject="src/main/java" type="XMLMAPPER" />
+    <table schema="rbac" tableName="User" />
+    <table schema="rbac" tableName="Role" />
+    <table schema="rbac" tableName="Permission" />
+    <table schema="rbac" tableName="User_Role" />
+    <table schema="rbac" tableName="Role_Permission" />
+  </context>
+</generatorConfiguration>

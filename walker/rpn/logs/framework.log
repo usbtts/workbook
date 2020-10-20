@@ -1,1 +1,12 @@
-[2020-08-13 18:09:26:256] [DEBUG] main - org.walker.rpn.CalculatorApp.run(CalculatorApp.java:30) - org.walker.rpn.CalculatorApp is started...
+[2020-08-25 12:13:44:656] [DEBUG] main - org.walker.rpn.CalculatorApp.run(CalculatorApp.java:30) - org.walker.rpn.CalculatorApp start...
+[2020-08-25 12:13:49:544] [DEBUG] pool-2-thread-1 - org.walker.rpn.input.CmdLineInput.run(CmdLineInput.java:24) - There is an input
+[2020-08-25 12:13:49:549] [DEBUG] pool-2-thread-1 - org.walker.rpn.calculator.RpnCalculator.compute(RpnCalculator.java:11) - Expressions from input 1 2 +
+[2020-08-25 12:13:49:570] [DEBUG] pool-2-thread-1 - org.walker.rpn.stack.OperandsStack.stash(OperandsStack.java:66) - operands list: [[], []]
+[2020-08-25 12:13:49:571] [DEBUG] pool-2-thread-1 - org.walker.rpn.stack.OperandsStack.stash(OperandsStack.java:67) - current operands: []
+[2020-08-25 12:13:49:571] [DEBUG] pool-2-thread-1 - org.walker.rpn.operator.AbstractOperator.doOperate(AbstractOperator.java:26) - This is a [defalut] operator
+[2020-08-25 12:13:49:574] [DEBUG] pool-2-thread-1 - org.walker.rpn.stack.OperandsStack.stash(OperandsStack.java:66) - operands list: [[1], [1], []]
+[2020-08-25 12:13:49:574] [DEBUG] pool-2-thread-1 - org.walker.rpn.stack.OperandsStack.stash(OperandsStack.java:67) - current operands: [1]
+[2020-08-25 12:13:49:575] [DEBUG] pool-2-thread-1 - org.walker.rpn.operator.AbstractOperator.doOperate(AbstractOperator.java:26) - This is a [defalut] operator
+[2020-08-25 12:13:49:580] [DEBUG] pool-2-thread-1 - org.walker.rpn.stack.OperandsStack.stash(OperandsStack.java:66) - operands list: [[1, 2], [1, 2], [1], []]
+[2020-08-25 12:13:49:582] [DEBUG] pool-2-thread-1 - org.walker.rpn.stack.OperandsStack.stash(OperandsStack.java:67) - current operands: [1, 2]
+[2020-08-25 12:13:49:582] [DEBUG] pool-2-thread-1 - org.walker.rpn.operator.AbstractOperator.doOperate(AbstractOperator.java:26) - This is a [+] operator
