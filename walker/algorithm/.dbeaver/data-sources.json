@@ -1,0 +1,38 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql5-17544ad9634-13cca13f0d0adf6a": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "rbac",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "192.168.3.5",
+				"port": "3306",
+				"database": "rbac",
+				"url": "jdbc:mysql://192.168.3.5:3306/rbac",
+				"home": "MySQL Binaries",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000",
+					"serverTimezone": "UTC",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
