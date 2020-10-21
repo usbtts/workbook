@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+server:
+  port: 8080
+  
+---
+spring:
+  profiles: dev
+  datasource:
+    username: root
+    password: 58662200
+    url: jdbc:mysql://192.168.3.5:3306/rbac?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+ 
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: org.walker.spring.web.model
+ 
+#showSql
+logging:
+  level:
+    org:
+      walker:
+        spring:
+          web:
+            dao: debug
+
+
